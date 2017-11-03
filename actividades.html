@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="author" content="Jean Pierre Zawasdzky">  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>OVI DB - PHP</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<!--  INICIO BLOQUE NAVEGACIÓN  -->
+      <nav class="light-blue lighten-1" >
+        <div class="nav-wrapper">
+          <a id="logo-container" href="index.html" class="brand-logo"> <img src="img/logo-blanco.jpg" width="100" alt="logo-unad"></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">LECTURAS<i class="material-icons right">arrow_drop_down</i></a>
+              <ul id="dropdown1" class="dropdown-content" style="width: 135.031px; position: absolute; top: -87px; left: 358.578px; display: none; opacity: 1;">
+                <li><a href="lecturas.html">1. Sevidor Local</a></li>
+                <li><a href="lecturas.html#bd">2. Creación Base dedatos</a></li>
+                <li><a href="lecturas.html#conexion">4. Conexión a base de datos</a></li>
+                <li><a href="lecturas.html#insert_delete">3. Insertar y borrar datos</a></li>
+                <li><a href="lecturas.html#actualizar">4. Actualizar datos</a></li>
+              </ul>
+            </li>
+          <li><a href="multimedia.html">MULTIMEDIA</a></li> 
+          <li><a href="actividades.html">ACTIVIDADES</a></li> 
+          <li><a href="autores.html">AUTORES</a></li>   
+          </ul>
+        </div>
+      </nav>
+<!--  FIN BLOQUE NAVEGACIÓN  -->
+
+<!--  INICIO CONTENIDO CENTRAL -->
+
+    <div class="container">
+      <section id="mamp" class="section scrollspy">
+        <h3 class="header center orange-text">ACTIVIDADES</h3>
+          <div class="row">
+            <div class="col s12 ">
+              <h5 class="light">Activiadad 1</h5>
+              <p>Descargar MAMP de <a href="mamp.info"> www.mamp.info </a>y realizar la instalacion del aplicativo para crear un servidorlocal</p><hr>
+            </div>
+
+            <div class="col s12 ">
+              <h5 class="light">Activiadad 3</h5>
+              <p>Crear una base da datos que se llame usuarios</a></p><hr>
+            </div>
+
+            <div class="col s12 ">
+              <h5 class="light">Activiadad 4</h5>
+              <p>Crear una tabla que se llame registros con los campos id, nombre, cedula, telefono, email, fecha nacimiento, y posteriormente insertar o llenarla con  11 registros </a></p><hr>
+            </div>
+
+            <div class="col s12 ">
+              <h5 class="light">Activiadad 5</h5>
+              <p>Crear el archivo de conexión y ejecutarlo desde el navegador para comprobar con el navegador en la ruta localhost si la conexion es correcta</a></p><hr>
+            </div>
+
+            <div class="col s12 ">
+              <h5 class="light">Activiadad 6</h5>
+              <p>Insertar 4 registros llenando todos los campos de la tabla registros</a></p><hr>
+            </div>
+          </div>      
+
+            <div class="col s12 ">
+              <h5 class="light">Activiadad 7</h5>
+              <p> Actualizar el regstro con el id numero 4 y numero 10 de la tabla dejando como nombre pedro y juana respectivamente </a></p><hr>
+            </div>
+          </div> 
+      </section>
+
+    </div>
+
+
+<!--  FIN CONTENIDO CENTRAL -->
+
+  <footer class="page-footer orange" id="footer">
+  </footer>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.menu').load('navegacion.html');
+      $('#footer').load('footer.html');
+      $(".dropdown-button").dropdown();
+    });
+  </script>
+  </body>
+</html>

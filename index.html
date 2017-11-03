@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="author" content="Jean Pierre Zawasdzky">  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>OVI DB - PHP</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--  INICIO BLOQUE NAVEGACIÓN  -->
+      <nav class="light-blue lighten-1" >
+        <div class="nav-wrapper">
+          <a id="logo-container" href="index.html" class="brand-logo"> <img src="img/logo-blanco.jpg" width="100" alt="logo-unad"></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">LECTURAS<i class="material-icons right">arrow_drop_down</i></a>
+              <ul id="dropdown1" class="dropdown-content" style="width: 135.031px; position: absolute; top: -87px; left: 358.578px; display: none; opacity: 1;">
+                <li><a href="lecturas.html">1. Sevidor Local</a></li>
+                <li><a href="lecturas.html#bd">2. Creación Base dedatos</a></li>
+                <li><a href="lecturas.html#conexion">4. Conexión a base de datos</a></li>
+                <li><a href="lecturas.html#insert_delete">3. Insertar y borrar datos</a></li>
+                <li><a href="lecturas.html#actualizar">4. Actualizar datos</a></li>
+              </ul>
+            </li>
+          <li><a href="multimedia.html">MULTIMEDIA</a></li> 
+          <li><a href="actividades.html">ACTIVIDADES</a></li> 
+          <li><a href="autores.html">AUTORES</a></li>   
+          </ul>
+        </div>
+      </nav>
+<!--  FIN BLOQUE NAVEGACIÓN  -->
+
+<!--  INICIO CONTENIDO CENTRAL -->
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h3 class="header center orange-text">OVI Conexión a base de datos con PHP</h3>
+        <div class="row">
+          <div class="col s12 ">
+            <h5 class="light">INTRODUCCIÓN</h5>
+            <p> EL presente objeto virtual de aprendizaje muestra de manera sencilla la manera en que se puede conectar y  administrar informacion pagina web cliente con un servidor  que contiene una base de datos.</p>
+            <p> Para el tutorial se empleará un servidor web local Apache <a href="www.apache.org">www.apache.org</a></p>
+            <p> Una Base de datos en MYSQL <a href="www.mysql.com)">www.mysql.com</a></p>
+            <p> Un aplicativo <a href="https://www.mamp.info/en/">MAMP</a> gratuito para gestionar nuestro servidor local y nuestra base de datos</p>
+            <br><br>
+
+            <h5 class="light">OBJETIVOS</h5>
+            <p> Instalar localmente el servidor MAMP la creación del servidor local</p>
+            <p> Crear base de datos en el servidor e ingresar los datos</p>
+            <p> Establecer  conexion entre un sitio cliente y la base de datos en el servidor </p>
+            <p> Almacenar y borrar informacion de la base de datos con PHP </p> 
+            <p> Actualizar Registros en la Base de datos con PHP</p> 
+            <br><br>
+          </div>
+        </div>      
+      <br><br>
+    </div>
+  </div>
+
+<!--  FIN CONTENIDO CENTRAL -->
+  <div class="container">
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Participantes:</h5>
+            <p class="light">Jean Pierre Zawasdzky</p>
+            <p class="light">80827198</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Temáticas</h5>
+            <p class="light">Instalación server Mamp</p>
+            <p class="light">Creación base de datos</p>
+            <p class="light">Conexión a base de datos</p>
+            <p class="light">Inserción y ediciónd de datos</p>
+            <p class="light">Actualización de datos</p>
+        </div>
+      </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="fa fa-twitter" aria-hidden="true"></i></h2>
+              <div class="widget widget-twitter">
+              	<header>
+                  	<i class="fa fa-twitter"></i>
+                  	<h4>Twitter UNAD</h4>
+                      <p>@UNAD</p>
+                   </header>
+                   <div>
+                       <a class="twitter-timeline" data-lang="es" data-height="650" data-theme="light" href="https://twitter.com/universidadunad">UNAD</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                   </div>
+              </div>
+          </div>
+       </div>
+
+  </div><br><br>
+
+</div>
+<div class="center">
+  <a href="https://www.contadorvisitasgratis.com" title="contador de visitas para blog">
+  <img src="https://counter8.freecounter.ovh/private/contadorvisitasgratis.php?c=yssw13snrncrkhdsxr5mqmjx9t2ez8y4" border="0" title="contador de visitas" alt="contador de visitas"></a>
+</div>
+
+  <footer class="page-footer orange" id="footer">
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.menu').load('navegacion.html');
+      $('#footer').load('footer.html');
+      $(".dropdown-button").dropdown();
+    });
+  </script>
+  </body>
+</html>
+
+

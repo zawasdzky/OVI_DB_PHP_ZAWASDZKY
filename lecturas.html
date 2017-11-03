@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="author" content="Jean Pierre Zawasdzky">  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>OVI DB - PHP</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<!--  INICIO BLOQUE NAVEGACIÓN  -->
+      <nav class="light-blue lighten-1" >
+        <div class="nav-wrapper">
+          <a id="logo-container" href="index.html" class="brand-logo"> <img src="img/logo-blanco.jpg" width="100" alt="logo-unad"></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">LECTURAS<i class="material-icons right">arrow_drop_down</i></a>
+              <ul id="dropdown1" class="dropdown-content" style="width: 135.031px; position: absolute; top: -87px; left: 358.578px; display: none; opacity: 1;">
+                <li><a href="lecturas.html">1. Sevidor Local</a></li>
+                <li><a href="lecturas.html#bd">2. Creación Base dedatos</a></li>
+                <li><a href="lecturas.html#conexion">4. Conexión a base de datos</a></li>
+                <li><a href="lecturas.html#insert_delete">3. Insertar y borrar datos</a></li>
+                <li><a href="lecturas.html#actualizar">4. Actualizar datos</a></li>
+              </ul>
+            </li>
+          <li><a href="multimedia.html">MULTIMEDIA</a></li> 
+          <li><a href="actividades.html">ACTIVIDADES</a></li> 
+          <li><a href="autores.html">AUTORES</a></li>   
+          </ul>
+        </div>
+      </nav>
+<!--  FIN BLOQUE NAVEGACIÓN  -->
+
+<!--  INICIO CONTENIDO CENTRAL -->
+
+    <div class="container">
+      <section id="mamp" class="section scrollspy">
+      <h3 class="header center orange-text">INSTALACION DE SERVIDOR LOCAL CON MAMP</h3>
+        <div class="row">
+          <div class="col s12 ">
+            <h5 class="light">QUE ES MAMP?</h5>
+            <p class="center"><img src="https://www.mamp.info/images/app-icons/icon-mamppro.png?m=1470659541"></p>
+            <p> MAMP  es un programa que instala un entorno de servidor local en cuestión de segundos en su computadora. Viene de forma gratuita, y se instala fácilmente. MAMP no comprometerá ninguna instalación existente de Apache que se esté ejecutando en su sistema. ¡Puede instalar Apache, PHP y MySQL sin iniciar un script o tener que cambiar ningún archivo de configuración! Además, si ya no se necesita MAMP, simplemente elimine la carpeta MAMP y todo vuelve a su estado original (es decir, MAMP no modifica el sistema "normal").</p>
+            <br><br>
+            <h5 class="light">¿COMO INSTALAR MAMP?</h5>
+            <p>Debe acceder a <a href="https://www.mamp.info/en/">mamp.info</a> 
+            descargar el archivo ejectable abrirlo e instalalo.</p>
+            <p><img src="https://www.mamp.info/en/images/screenshots/en_mamp-start.jpg"></p>
+            <p>para iniciar el servidor debe dar clic en iniciar servidores.</p>
+            <br><br>
+          </div>
+        </div>      
+        <hr>
+      </section>
+
+
+      <section>
+        <a name="bd" id="bd"></a>
+      <section id="mamp" class="section scrollspy">
+      <h3 class="header center orange-text">Creación Base de datos con MAMP</h3>
+        <div class="row">
+          <div class="col s12 ">
+            <h5 class="light">Ingresar al administrado de bases de datos PHPMYADMIN</h5>
+            <p class="center"></p>
+            <p>al ejecutar el aplicativo mamp debe dar clic en Abrir pagina de inicio, posteriormente debe dar clic en phpmyadmin</p><img src="http://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2015/04/14-1024x753.png" width="800"><br>imagen tomada de s3.amazonasws.com
+            <br><br>
+            <h5 class="light">Crear una base de datos</h5>
+            <p>Debe acceder a <a href="https://www.mamp.info/en/">mamp.info</a> 
+            descargar el archivo ejectable abrirlo e instalalo.</p>
+            <p><img src="https://www.mamp.info/en/images/screenshots/en_mamp-start.jpg"><br>Imagen tomada de mamp.info<br>
+            para iniciar el servidor debe dar clic en iniciar servidores.</p>
+            <br><br>
+            <p>Posteriormete debe dar clic en bases de datos  /  Crear una nueva base de datos, allí ingresare el nombre(puede ser mydatabase) y el cotejamiento, para español se puede usar UTF8 general_ci</p>
+            <p><img src="https://www.mrtutorials.in/web/image-house/5022-a.png"><br>imagen tomada de https://www.mrtutorials.in/web/</p>
+
+            <p>Posteriormente  debe crear una tabla, habrá un cuadro titulado "Crear nueva tabla en la base de datos", donde escriba el nombre(puede ser mytable) de la tabla y el número de columnas y presione el botón "Ir", luego debe diligenciar los campos como el consecutivo ID, nombre apellido, telephono, y año de nacimiento, posteriormente debe ingresar campos para tener informacion de ejemplo en la base de datos
+            <img src="https://www.mrtutorials.in/web/image-house/5022-d.png"><br> imagen tomada de https://www.mrtutorials.in/web/
+            </p>
+          </div>
+        </div>      
+        <hr>
+      </section>
+
+      <section>
+        <a name="conexion" id="conexion"></a>
+      <h3 class="header center orange-text">Conexión con  Base de datos </h3>
+        <div class="row">
+          <div class="col s12 ">
+            <h5 class="light">Archivo php de conexión</h5>
+            <p>Debe crear un arcivo llamado conecion.php y alojarlo en la carpeta htdocs que se encuentra en la carpeta instalada MAMP. en sese archivo debe alojar el sguiente codigo que se muestra en el ejemplo:
+            </p>
+            <p>Este simple ejemplo muestra como conectar, ejecutar una consulta, imprimir las filas resultantes y desconectar a una base de datos MySQL. Ejemplo #1 Ejemplo general de la extensión MySQL
+            </p>
+<p><div class="phpcode"><code><span style="color: #000000">
+<span style="color: #0000BB">&lt;?php<br></span><span style="color: #FF8000">//&nbsp;Conectando,&nbsp;seleccionando&nbsp;la&nbsp;base&nbsp;de&nbsp;datos<br></span><span style="color: #0000BB">$link&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">mysql_connect</span><span style="color: #007700">(</span><span style="color: #DD0000">'mysql_host'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'mysql_user'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'mysql_password'</span><span style="color: #007700">)<br>&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;die(</span><span style="color: #DD0000">'No&nbsp;se&nbsp;pudo&nbsp;conectar:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">mysql_error</span><span style="color: #007700">());<br>echo&nbsp;</span><span style="color: #DD0000">'Connected&nbsp;successfully'</span><span style="color: #007700">;<br></span><span style="color: #0000BB">mysql_select_db</span><span style="color: #007700">(</span><span style="color: #DD0000">'my_database'</span><span style="color: #007700">)&nbsp;or&nbsp;die(</span><span style="color: #DD0000">'No&nbsp;se&nbsp;pudo&nbsp;seleccionar&nbsp;la&nbsp;base&nbsp;de&nbsp;datos'</span><span style="color: #007700">);<br><br></span><span style="color: #FF8000">//&nbsp;Realizar&nbsp;una&nbsp;consulta&nbsp;MySQL<br></span><span style="color: #0000BB">$query&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;my_table'</span><span style="color: #007700">;<br></span><span style="color: #0000BB">$result&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">mysql_query</span><span style="color: #007700">(</span><span style="color: #0000BB">$query</span><span style="color: #007700">)&nbsp;or&nbsp;die(</span><span style="color: #DD0000">'Consulta&nbsp;fallida:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">mysql_error</span><span style="color: #007700">());<br><br></span><span style="color: #FF8000">//&nbsp;Imprimir&nbsp;los&nbsp;resultados&nbsp;en&nbsp;HTML<br></span><span style="color: #007700">echo&nbsp;</span><span style="color: #DD0000">"&lt;table&gt;\n"</span><span style="color: #007700">;<br>while&nbsp;(</span><span style="color: #0000BB">$line&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">mysql_fetch_array</span><span style="color: #007700">(</span><span style="color: #0000BB">$result</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">MYSQL_ASSOC</span><span style="color: #007700">))&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;</span><span style="color: #DD0000">"\t&lt;tr&gt;\n"</span><span style="color: #007700">;<br>&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$line&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$col_value</span><span style="color: #007700">)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;</span><span style="color: #DD0000">"\t\t&lt;td&gt;</span><span style="color: #0000BB">$col_value</span><span style="color: #DD0000">&lt;/td&gt;\n"</span><span style="color: #007700">;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;</span><span style="color: #DD0000">"\t&lt;/tr&gt;\n"</span><span style="color: #007700">;<br>}<br>echo&nbsp;</span><span style="color: #DD0000">"&lt;/table&gt;\n"</span><span style="color: #007700">;<br><br></span><span style="color: #FF8000">//&nbsp;Liberar&nbsp;resultados<br></span><span style="color: #0000BB">mysql_free_result</span><span style="color: #007700">(</span><span style="color: #0000BB">$result</span><span style="color: #007700">);<br><br></span><span style="color: #FF8000">//&nbsp;Cerrar&nbsp;la&nbsp;conexión<br></span><span style="color: #0000BB">mysql_close</span><span style="color: #007700">(</span><span style="color: #0000BB">$link</span><span style="color: #007700">);<br></span><span style="color: #0000BB">?&gt;</span>
+</span>
+</code></div></p>
+          </div>
+        </div>      
+        <hr>
+      </section>
+
+      <section >
+        <a name="insert_delete" id="insert_delete"></a>
+        <h3 class="header center orange-text">Insertar y borrar información en una base de datos</h3>
+        <div class="row">
+          <div class="col s12 ">
+            <h5 class="light">Ingresar datos en la base de datos</h5>
+
+            <p>Para esto se debe crear un archivo llamado insertar.php el cual contiene el siguiente codigo</p>
+            <div class="w3-code htmlHigh notranslate">
+              <span style="color:black"><span style="color:red">&lt;?php</span><br>$servername = <span style="color:brown">"localhost"</span>;<br>$username = <span style="color:brown">"root"</span>;<br>$password = <span style="color:brown">""</span>;<br>$dbname = <span style="color:brown">"mydatabase"</span>;<br><br><span style="color:green">// crear la conexión<br></span>$conn = <span style="color:mediumblue">new</span> mysqli($servername, $username, $password, $dbname);<br><span style="color:red">
+              </span> <span style="color:green">// revisar la coneccion<br></span><span style="color:red">
+              </span> <span style="color:mediumblue">if</span> ($conn-&gt;connect_error)&nbsp;{<br><span style="color:red">
+              </span>&nbsp;&nbsp;&nbsp; <span style="color:mediumblue">die</span>(<span style="color:brown">"eror de conexion: "</span> . $conn-&gt;connect_error);<br>}<span style="color:red">
+              </span><br><span style="color:red">
+                <span style="color:green">// insertando los datos en la base de datos:<br></span>
+              </span> <br>$sql = <span style="color:brown">"INSERT INTO mytable (firstname, lastname, email)<br>
+               VALUES ('John', 'Doe', 'john@example.com')"</span>;<br><span style="color:red">
+              </span> <br><span style="color:mediumblue">
+                  <span style="color:green">// si los tados se han insertado, entonces muestre el mensaje<br></span>
+              if</span> ($conn-&gt;query($sql) === TRUE) {<br>&nbsp;&nbsp;&nbsp; <span style="color:mediumblue">echo</span> <span style="color:brown">"datos insertados "</span>;<br>} <span style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp; <span style="color:mediumblue">echo</span> <span style="color:brown">"Error: "</span> . $sql . <span style="color:brown">"&lt;br&gt;"</span> . $conn-&gt;error;<br>}<br><br>$conn-&gt;close();<br>
+              <span style="color:red">?&gt;</span></span>
+               </div>
+              <p>Para borar un registro debe cambiar la consulta sql por "DELETE FROM" especificando cual es el registro id que desea borrar con el "WHERE"</p>
+              <div class="w3-code htmlHigh notranslate">
+                <br>$sql = <span style="color:brown">"DELETE FROM mytabla WHERE id=3"</span>
+              </div>
+
+          </div>
+        </div>      
+        <hr>
+
+      </section>
+
+      <a name="actualizar" id="actualizar"></a>
+      <section id="mamp" class="section scrollspy">
+        <h3 class="header center orange-text">Actualizar un registro de la Base de datos</h3>
+          <div class="row">
+            <div class="col s12 ">
+              <h5 class="light">Actualizar registro</h5>
+              <p>Para actualizar un registro debe especifirac cuales son los campos que desea cambiar y debe identificar cual es el identificador id del registro, para esto el archivo actualizar debe tener la sentencia UPDATE como en el siguiente ejemplo:</p>
+
+            <div class="w3-code htmlHigh notranslate">
+              <span style="color:black"><span style="color:red">&lt;?php</span><br>$servername = <span style="color:brown">"localhost"</span>;<br>$username = <span style="color:brown">"root"</span>;<br>$password = <span style="color:brown">""</span>;<br>$dbname = <span style="color:brown">"mydatabase"</span>;<br><br><span style="color:green">// crear la conexión<br></span>$conn = <span style="color:mediumblue">new</span> mysqli($servername, $username, $password, $dbname);<br><span style="color:red">
+              </span> <span style="color:green">// revisar la coneccion<br></span><span style="color:red">
+              </span> <span style="color:mediumblue">if</span> ($conn-&gt;connect_error)&nbsp;{<br><span style="color:red">
+              </span>&nbsp;&nbsp;&nbsp; <span style="color:mediumblue">die</span>(<span style="color:brown">"eror de conexion: "</span> . $conn-&gt;connect_error);<br>}<span style="color:red">
+
+              </span><br><span style="color:red">
+                <span style="color:green">// Actualizar el campo de un registro en la base de datos:<br></span>
+              </span> <br>$sql = <span style="color:brown">"UPDATE mutabla SET lastname='pedro' WHERE id=2"</span>;<br><span style="color:red">
+              </span> <br><span style="color:mediumblue">
+
+                  <span style="color:green">// si los tados se han insertado, entonces muestre el mensaje<br></span>
+              if</span> ($conn-&gt;query($sql) === TRUE) {<br>&nbsp;&nbsp;&nbsp; <span style="color:mediumblue">echo</span> <span style="color:brown">"datos insertados "</span>;<br>} <span style="color:mediumblue">else</span> {<br>&nbsp;&nbsp;&nbsp; <span style="color:mediumblue">echo</span> <span style="color:brown">"Error: "</span> . $sql . <span style="color:brown">"&lt;br&gt;"</span> . $conn-&gt;error;<br>}<br><br>$conn-&gt;close();<br>
+              <span style="color:red">?&gt;</span></span>
+               </div>
+
+
+
+            </div>
+          </div>      
+          <hr>
+      </section>
+
+
+    </div>
+
+
+<!--  FIN CONTENIDO CENTRAL -->
+
+  <footer class="page-footer orange" id="footer">
+  </footer>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.menu').load('navegacion.html');
+      $('#footer').load('footer.html');
+      $(".dropdown-button").dropdown();
+    });
+  </script>
+  </body>
+</html>

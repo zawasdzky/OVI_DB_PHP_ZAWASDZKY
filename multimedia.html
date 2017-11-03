@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="author" content="Jean Pierre Zawasdzky">  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>OVI DB - PHP</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<!--  INICIO BLOQUE NAVEGACIÓN  -->
+      <nav class="light-blue lighten-1" >
+        <div class="nav-wrapper">
+          <a id="logo-container" href="index.html" class="brand-logo"> <img src="img/logo-blanco.jpg" width="100" alt="logo-unad"></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">LECTURAS<i class="material-icons right">arrow_drop_down</i></a>
+              <ul id="dropdown1" class="dropdown-content" style="width: 135.031px; position: absolute; top: -87px; left: 358.578px; display: none; opacity: 1;">
+                <li><a href="lecturas.html">1. Sevidor Local</a></li>
+                <li><a href="lecturas.html#bd">2. Creación Base dedatos</a></li>
+                <li><a href="lecturas.html#conexion">4. Conexión a base de datos</a></li>
+                <li><a href="lecturas.html#insert_delete">3. Insertar y borrar datos</a></li>
+                <li><a href="lecturas.html#actualizar">4. Actualizar datos</a></li>
+              </ul>
+            </li>
+          <li><a href="multimedia.html">MULTIMEDIA</a></li> 
+          <li><a href="actividades.html">ACTIVIDADES</a></li> 
+          <li><a href="autores.html">AUTORES</a></li>   
+          </ul>
+        </div>
+      </nav>
+<!--  FIN BLOQUE NAVEGACIÓN  -->
+
+<!--  INICIO CONTENIDO CENTRAL -->
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h3 class="header center orange-text">Multimedia</h3>
+        <div class="row center">
+
+          <div class="col s12 ">
+            <h5 class="light">INTRODUCCIÓN MAMP y PHP</h5>
+              <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bS9-Cq2043Y" frameborder="0" allowfullscreen></iframe>
+              </p>
+            <br><hr><br>
+          </div>
+
+          <div class="col s12 ">
+            <h5 class="light">Conectar a base de datos Mysql y php</h5>
+              <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6MJDkSzgmLc" frameborder="0" allowfullscreen></iframe>
+              </p>
+            <br><hr><br>
+          </div>
+
+          <div class="col s12 ">
+            <h5 class="light">insertar / borrar datos </h5>
+              <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tqCgL5Ed3RM" frameborder="0" allowfullscreen></iframe>
+              </p>
+            <br><hr><br>
+          </div>
+
+          <div class="col s12 ">
+            <h5 class="light">Actualizar datos php</h5>
+              <p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/0cbEpbe-cgY" frameborder="0" allowfullscreen></iframe>
+              </p>
+            <br><hr><br>
+          </div>
+
+
+        </div>      
+      <br><br>
+    </div>
+  </div>
+
+
+<!--  FIN CONTENIDO CENTRAL -->
+  <footer class="page-footer orange" id="footer">
+  </footer>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.menu').load('navegacion.html');
+      $('#footer').load('footer.html');
+      $(".dropdown-button").dropdown();
+    });
+  </script>
+  </body>
+</html>

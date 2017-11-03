@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="author" content="Jean Pierre Zawasdzky">  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>OVI DB - PHP</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<!--  INICIO BLOQUE NAVEGACIÓN  -->
+      <nav class="light-blue lighten-1" >
+        <div class="nav-wrapper">
+          <a id="logo-container" href="index.html" class="brand-logo"> <img src="img/logo-blanco.jpg" width="100" alt="logo-unad"></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">LECTURAS<i class="material-icons right">arrow_drop_down</i></a>
+              <ul id="dropdown1" class="dropdown-content" style="width: 135.031px; position: absolute; top: -87px; left: 358.578px; display: none; opacity: 1;">
+                <li><a href="lecturas.html">1. Sevidor Local</a></li>
+                <li><a href="lecturas.html#bd">2. Creación Base dedatos</a></li>
+                <li><a href="lecturas.html#conexion">4. Conexión a base de datos</a></li>
+                <li><a href="lecturas.html#insert_delete">3. Insertar y borrar datos</a></li>
+                <li><a href="lecturas.html#actualizar">4. Actualizar datos</a></li>
+              </ul>
+            </li>
+          <li><a href="multimedia.html">MULTIMEDIA</a></li> 
+          <li><a href="actividades.html">ACTIVIDADES</a></li> 
+          <li><a href="autores.html">AUTORES</a></li>   
+          </ul>
+        </div>
+      </nav>
+<!--  FIN BLOQUE NAVEGACIÓN  -->
+
+
+
+  <div class="container">
+      <!--   Icon Section   -->
+        <div class="col s12 light center">
+            <h3 class="header center orange-text">Autor</h3>
+            <h2 class="center light-blue-text"><img src="http://grupovertice.co/zawasdzky/jean.jpg" width="200"></h2>
+            <p class="light"><strong>Nombre:</strong> Jean Pierre Zawasdzky</p>
+            <p class="light"><strong>Código</strong> 80827198</p>
+            <p class="light"><strong>Programa</strong> Ingenieria de sistemas</p>
+            <p class="light"><strong>skype</strong> Zawasdzky</p>
+            <p class="light"><strong>email:_ </strong> Zawasdzky@gmail.com</p>
+            <br><hr><br><br><br>
+        </div>
+
+
+  </div><br><br>
+
+  <footer class="page-footer orange" id="footer">
+  </footer>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.menu').load('navegacion.html');
+      $('#footer').load('footer.html');
+      $(".dropdown-button").dropdown();
+    });
+  </script>
+  </body>
+</html>
